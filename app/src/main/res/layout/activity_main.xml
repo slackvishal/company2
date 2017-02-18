@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ctadmin.company.MainActivity"
+    android:background="@drawable/wallpaper">
+
+
+    <TextView
+        android:text="@string/number"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dial"
+        android:textColor="@android:color/black"
+        android:autoLink="phone"
+        android:clickable="true"
+        android:layout_above="@+id/textView6"
+        android:layout_alignStart="@+id/title_text_view"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:text="@string/mail"
+        android:autoLink="email"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="@string/location"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:text="@string/locate"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ascendas"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@+id/title_text_view" />
+
+    <TextView
+        android:text="@string/email"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:text="@string/mobile"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/dial"
+        android:layout_alignBottom="@+id/dial"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/companyname"
+        android:textSize="42sp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="45dp" />
+
+
+</RelativeLayout>

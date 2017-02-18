@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">company</string>
+    <string name="email">Email</string>
+    <string name="mail">vishalinfant2@gmail.com</string>
+    <string name="mobile">Mobile :</string>
+    <string name="number">9876543201</string>
+    <string name="location">Tharamani , chennai.</string>
+    <string name="companyname">Ascendas</string>
+    <string name="locate">Location:</string>
+</resources>
